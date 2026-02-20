@@ -7,27 +7,27 @@ This guide covers the technical nuances and "interview traps" surrounding Abstra
 *Every frequent and advanced question regarding Abstract Class behavior.*
 
 1. **Can an Abstract Class be declared as `final`?**
-* **The Hurdle:** Absolutely not. This is a logical contradiction. `abstract` requires a class to be inherited to be useful, while `final` strictly forbids inheritance. The compiler will throw an error.
+* **The Concept:** Absolutely not. This is a logical contradiction. `abstract` requires a class to be inherited to be useful, while `final` strictly forbids inheritance. The compiler will throw an error.
 
 
 2. **Can we have a `static` method in an Abstract Class?**
-* **The Hurdle:** Yes. Static methods belong to the class, not an object. You can call `AbstractClass.staticMethod()` without ever instantiating the class.
+* **The Concept:** Yes. Static methods belong to the class, not an object. You can call `AbstractClass.staticMethod()` without ever instantiating the class.
 
 
 3. **If an Abstract Class has no abstract methods, is it still "abstract"?**
-* **The Hurdle:** Yes. You can declare a class as abstract solely to prevent it from being instantiated, even if it only contains concrete (finished) methods.
+* **The Concept:** Yes. You can declare a class as abstract solely to prevent it from being instantiated, even if it only contains concrete (finished) methods.
 
 
 4. **Explain the execution order of constructors in an Abstract Class hierarchy.**
-* **The Hurdle:** When a child object is created, the Abstract Class constructor runs first (via `super()`), followed by the child's constructor. This ensures the base state is set before the child's specific state.
+* **The Concept:** When a child object is created, the Abstract Class constructor runs first (via `super()`), followed by the child's constructor. This ensures the base state is set before the child's specific state.
 
 
 5. **Can an Abstract Method be `synchronized` or `native`?**
-* **The Hurdle:** No. `synchronized` and `native` keywords relate to the *implementation* (the body) of a method. Since abstract methods have no body, these modifiers are illegal.
+* **The Concept:** No. `synchronized` and `native` keywords relate to the *implementation* (the body) of a method. Since abstract methods have no body, these modifiers are illegal.
 
 
 6. **Can you define an abstract class inside another class?**
-* **The Hurdle:** Yes, Java supports nested abstract classes (Inner Classes).
+* **The Concept:** Yes, Java supports nested abstract classes (Inner Classes).
 
 
 
