@@ -1,7 +1,3 @@
-Since you've got a solid handle on the theory, let’s dive into the practical side. Interviewers love inner classes because they test your understanding of memory management, scope, and the nuances of the JVM.
-
----
-
 ## 🎤 Frequently Asked Interview Questions
 
 ### 1. Can an inner class be declared `private` or `protected`?
