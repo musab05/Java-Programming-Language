@@ -6,7 +6,7 @@
 
 ### 2. What is the difference between `orElse("Default")` and `orElseGet(() -> "Default")`?
 
-**Answer:** This is a classic "Senior Dev" question.
+**Answer:** This is a classic question.
 
 - **`orElse`** is evaluated **immediately**, regardless of whether the `Optional` is empty or not. If you pass a method call to `orElse`, that method runs every time.
 - **`orElseGet`** is **lazy**. It takes a Supplier lambda and _only_ executes it if the `Optional` is actually empty.

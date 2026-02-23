@@ -46,7 +46,7 @@ public class Account implements Serializable {
 
 ## 📝 Practice Problems
 
-Here are two scenario-based problems. The first tests your ability to protect sensitive data and manage class versions. The second is an advanced "Senior Dev" trick that uses serialization for in-memory cloning.
+Here are two scenario-based problems. The first tests your ability to protect sensitive data and manage class versions. The second is an advanced trick that uses serialization for in-memory cloning.
 
 ### Problem 1: The Secure Game Save
 
